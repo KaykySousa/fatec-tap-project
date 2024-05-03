@@ -1,0 +1,15 @@
+*,
+html,
+body,
+input,
+button,
+textarea {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	background: none;
+	text-decoration: none;
+	list-style: none;
+}

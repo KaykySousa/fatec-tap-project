@@ -1,0 +1,10 @@
+{
+    "name": "fatec/projetophp",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [],
+    "require": {}
+}

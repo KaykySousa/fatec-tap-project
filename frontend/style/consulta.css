@@ -1,0 +1,28 @@
+.navbar__links__consultar {
+	color: rgb(114, 132, 92);
+}
+
+.buttons {
+	padding-top: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.buttons__previous,
+.buttons__next {
+	height: 2rem;
+	width: 2rem;
+	margin-inline: 0.5rem;
+	border: none;
+	border-radius: 5px;
+	background-color: rgb(190, 215, 159);
+	font-size: 20px;
+}
+
+.buttons__next:hover,
+.buttons__previous:hover {
+	cursor: pointer;
+	background-color: rgb(114, 132, 92);
+	color: white;
+}

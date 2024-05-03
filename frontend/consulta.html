@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style/reset.css" />
+		<link rel="stylesheet" href="./style/global.css" />
+		<link rel="stylesheet" href="./style/consulta.css" />
+		<title>ProjetoPHP</title>
+		<script src="./js/script.js" defer></script>
+		<script src="./js/consulta.js" defer></script>
+	</head>
+
+	<body>
+		<!-- Navbar -->
+		<header class="navbar">
+			<nav>
+				<ul class="navbar__links">
+					<li>
+						<a href="./index.html" class="navbar__link navbar__links__cadastrar">Cadastrar</a>
+					</li>
+					<li><a href="" class="navbar__link navbar__links__consultar">Consultar</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- /Navbar/ -->
+
+		<!-- Formulario -->
+		<main class="position__form">
+			<form id="form" class="form">
+				<h1 class="form__title">Consultar usuários</h1>
+				<div class="form__input">
+					<p class="form__label">Nome</p>
+					<input id="name-input" type="text" name="name" disabled required />
+				</div>
+
+				<div class="form__input">
+					<p class="form__label">Email</p>
+					<input id="email-input" type="email" name="email" disabled required />
+				</div>
+
+				<div class="form__input">
+					<p class="form__label">Data de Nascimento</p>
+					<input id="birthdate-input" type="date" name="birthdate" disabled required />
+				</div>
+
+				<button id="update-button" type="submit" class="form__button" disabled>
+					Editar Registro
+				</button>
+				<button id="delete-button" type="button" class="form__button" disabled>
+					Excluir Registro
+				</button>
+			</form>
+
+			<div class="buttons">
+				<button id="prev-button" class="buttons__previous" disabled><</button>
+				<span id="user-index" class="hidden">0</span>
+				<div id="loading" class="loading"></div>
+				<button id="next-button" class="buttons__next" disabled>></button>
+			</div>
+		</main>
+		<!-- /Formulario/ -->
+	</body>
+</html>
