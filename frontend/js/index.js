@@ -24,6 +24,7 @@ async function createUser(e) {
 		if (!res.ok) throw new Error("Fetch error")
 
 		alert("Usuário cadastrado com sucesso!")
+		form.reset()
 	} catch (error) {
 		console.error(error)
 		alert("Erro ao cadastrar usuário!")
